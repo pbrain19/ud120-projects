@@ -45,10 +45,10 @@ print pred
 print Counter(pred)
 print "predicting time:", round(time()-t0, 3), "s"
 
-# from sklearn.metrics import accuracy_score
-# t0 = time()
-# print accuracy_score(labels_test, pred)
-# print "testing time:", round(time()-t0, 3), "s"
+from sklearn.metrics import accuracy_score
+t0 = time()
+print accuracy_score(labels_test, pred)
+print "testing time:", round(time()-t0, 3), "s"
 
 #########################################################
 
